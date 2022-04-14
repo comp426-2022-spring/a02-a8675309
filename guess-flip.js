@@ -14,9 +14,9 @@ if (value != null && value.includes("--call=")){
     //console.log(call)
 }
 else{
-    console.error('Error: no input');
-    console.error('Usage: node guess-flip --call=[heads|tails]')
-    process.exit(1)
+    console.log('Error: no input');
+    console.log('Usage: node guess-flip --call=[heads|tails]')
+    process.exit(0)
 }
 //console.log(numOfFlips)
 

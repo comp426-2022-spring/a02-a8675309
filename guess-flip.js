@@ -32,7 +32,7 @@ var result = 'lose';
 if (flip == call){
     result = 'win'
 }
-
+console.log('fuck me')
 console.log({call : call, flip : flip, result : result});
 
 

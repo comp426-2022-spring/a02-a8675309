@@ -16,17 +16,17 @@ if (value != null && value.includes("--call=")){
 else{
     console.log('Error: no input');
     console.log('Usage: node guess-flip --call=[heads|tails]')
-    console.log(process.argv)
+    //console.log(process.argv)
     process.exit(0)
 }
 //console.log(numOfFlips)
 
 var flip = defaultExport.coinFlip();
 
-if (call != 'heads' || call != 'tails'){
+if (call != 'heads' && call != 'tails'){
     console.log('Error: no input');
     console.log('Usage: node guess-flip --call=[heads|tails]')
-    console.log(process.argv)
+    //console.log(process.argv)
     process.exit(0)
 }
 
@@ -34,7 +34,7 @@ var result = 'lose';
 if (flip == call){
     result = 'win'
 }
-console.log('fuck me')
+//console.log('fuck me')
 console.log({call : call, flip : flip, result : result});
 
 

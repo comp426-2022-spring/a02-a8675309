@@ -21,6 +21,13 @@ else{
 //console.log(numOfFlips)
 
 var flip = defaultExport.coinFlip();
+
+if (call != 'heads' || call != 'tails'){
+    console.log('Error: no input');
+    console.log('Usage: node guess-flip --call=[heads|tails]')
+    process.exit(0)
+}
+
 var result = 'lose';
 if (flip == call){
     result = 'win'
